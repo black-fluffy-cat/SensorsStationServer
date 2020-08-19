@@ -17,7 +17,7 @@ public class SensorsDataController {
     }
 
     @PostMapping("/data")
-    public void receiveData(@RequestBody SensorData message) {
-        logger.info("Received message: " + message.getMessage());
+    public void receiveData(@RequestBody SensorData sensorData) {
+        logger.info("Received SensorData from device: " + sensorData.deviceName + " message: " + sensorData.message);
     }
 }

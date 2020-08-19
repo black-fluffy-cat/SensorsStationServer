@@ -1,14 +1,12 @@
 package com.example.sensorsstationserver.entities;
 
+import lombok.Getter;
+
 public class SensorData {
 
-    String message;
+    @Getter
+    public String deviceName;
 
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
+    @Getter
+    public String message;
 }
